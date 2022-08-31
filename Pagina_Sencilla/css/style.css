@@ -1,0 +1,363 @@
+*{
+        margin-top: -5px;
+        padding: 8px;
+        padding-bottom: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+}
+body{
+
+    background-color: rgb(255, 255, 255);
+    
+
+
+
+}
+header{
+    background-image: url("../img/la-luna-sobre-las-nubes-al-atardecer_5000x3125_xtrafondos.com.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    margin-left: -31px;
+    margin-right: -40px;
+    margin-top:-80px;
+    margin-bottom: -14px;
+
+
+
+}
+.logo img{
+    height: 80px;
+    width: 150px;
+    border-radius:20px 20px ;
+    -webkit-border-radius:20px 20px ;
+    -moz-border-radius:20px 20px ;
+    -ms-border-radius:20px 20px ;
+    -o-border-radius:20px 20px ;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1.2px 1px rgb(0, 0, 0);
+
+
+}
+.menu img:hover {
+    color: rgb(0, 0, 0);
+    transform: translateY(5px);
+    text-shadow: .2px 1px rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    
+}
+
+.menu .r:hover {
+    color: rgb(0, 0, 0);
+    transform: translateY(5px);
+    text-shadow: .2px 1px rgb(255, 255, 255);
+    cursor: pointer;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    
+
+}
+.menu .navega:hover {
+    color: rgb(0, 0, 0);
+    transform: translateY(5px);
+    cursor: pointer;
+    text-shadow: .2px 1px rgb(255, 252, 252);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+
+}
+.logo{
+
+    font-size: 30px;
+    flex: 0.3 0 auto;
+    margin-top:60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.nav{
+    font-size: 20px;
+    display: flex;
+    flex: .6 0 auto;
+    padding: 0px;
+    margin-top: 5px;
+
+  
+}
+
+.msg{
+    color: rgb(255, 245, 245);
+    font-size: 20px;
+    margin-top: 200px;
+    text-shadow: 1.2px 1px rgb(205, 7, 7);
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    
+
+}
+.msg p{
+    margin-top: -12vh;
+    padding-bottom: 50px;
+}
+.redes{
+    margin-top: 5px;
+}
+.redes a{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1.2px 1px rgb(15, 0, 0);
+ 
+    
+
+}
+
+
+
+/*Secion de imagenes */
+.section{
+
+    margin-top: -20px;
+    display: flex;
+    flex-wrap: wrap ;
+    background-color: rgb(227, 224, 224);
+    align-items: left;
+    justify-content: left;
+    text-align: justify;
+
+    
+
+}
+
+.one{
+    margin:10px;
+    padding: 0px;
+
+    flex: 31%;
+    flex-flow: row nowrap;
+    height: 100%;
+    
+}
+.one img{
+    border-radius:20px;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+
+.one h1{
+   margin-top:-60px;
+   color: aliceblue;
+   text-shadow: 1px 1px black;
+    font-size:4vh;
+    margin-left:10px;
+}
+.one p {
+    font-size: 20px;
+    color: rgb(105, 75, 75);
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+hr{
+    background-color:rgb(255, 255, 255);
+    margin-top:0px;
+    margin-left:-22px;
+    border:none;
+    height:0px;
+    width:99.5vw;
+}
+
+
+footer{
+    background-color: rgb(202, 26, 26);
+    margin:-30px;
+    margin-top:-8px;
+    padding:7px;
+    width: 100vw;
+    height:33px;
+    text-align: center;
+
+}
+footer a{
+    background-color:rgb(201, 25, 25);
+    text-align: center;
+    padding:5px;
+    color: white;
+    margin-top: 100px;
+}
+@media all and (max-width:900px){
+    *{
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+}
+        
+    .nav a{
+        font-size: 16px;
+        flex: 0 0 auto;
+        margin-left: -18px;
+    }
+    .redes a{
+        font-size: 23px;
+        margin-left: -12px;
+    }
+}
+
+
+
+@media all and (max-width:768px){
+    header{
+        margin-top:-10px;
+     
+    }    
+
+    .section{
+  
+        flex-flow: column;
+    }
+    .one h1{
+        font-size:25px;
+        margin-top:-45px;
+    }
+    .one h5{
+        font-size:14px;
+        margin-top:-70px;
+    }
+
+    .menu{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        display: block;
+
+    }
+    .logo img{
+    margin-top: -80px;
+    height:120px;
+    width: 250px;
+    border-radius: 20px 20px ;
+    -webkit-border-radius: 20px 20px ;
+    -moz-border-radius: 20px 20px ;
+    -ms-border-radius: 20px 20px ;
+    -o-border-radius: 20px 20px ;
+}
+    .nav{
+
+        flex: 0 0 auto;
+        margin-top:20px;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    
+    }
+    .nav i{
+        margin: 25px;
+        margin-top: 0px;
+    }
+    .redes{
+        margin-left: 20px;
+        flex: 0 0 auto;
+        margin-top: -20px;
+    }
+    .redes i{
+     
+        font-size: 25px;
+        margin: 25px;
+        margin-top: 0px;
+    }
+    .menu img:hover {
+        color: rgb(0, 0, 0);
+        transform: translateY(0px);
+        text-shadow: .2px 1px rgb(255, 255, 255);
+        cursor: pointer;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    
+    .menu .r:hover {
+        color: rgb(0, 0, 0);
+        transform: translateY(5px);
+        text-shadow: .2px 1px rgb(255, 255, 255);
+        cursor: pointer;
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+        
+    
+    }
+    .menu .navega:hover {
+        color: rgb(0, 0, 0);
+        transform: translateY(5px);
+        cursor: pointer;
+        text-shadow: .2px 1px rgb(255, 252, 252);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+
+}
+.menu .navega:hover .tex{
+    margin-top:-55px;
+    margin-left:65px;
+    display:block;
+    position:absolute;
+    overflow:hidden;
+
+}
+ hr{
+     width:97vw;
+ }
+
+ .msg{
+     margin-top: -15px;
+ }
+    .msg p{
+        margin-top: 15px;
+        padding-bottom: 80px;
+
+    }
+
+
+    .nav .tex{
+        display: none;
+    }
+}
+

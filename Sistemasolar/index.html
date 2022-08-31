@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-escala=1.0">
+    <title>Sistema solar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="abriendo esconder-Ui vista-2D aumentar-zoom Cerrar-datos Cerrar-opciones">
+    <div id="Navega">
+      <a id="alternar-datos" href="#data"></i>Cuerpos celestes</a>
+      <a id="alternar-controles" href="#cotroles"></i>Opciones</a>
+    </div>
+    <div id="datos">
+      <a class="sol" title="sol" href="#solvelo">Sol</a>
+      <a class="Mercurio" title="Mercurio" href="#mercuvelo">Mercurio</a>
+      <a class="venus" title="venus" href="#venusvelo">Venus</a>
+      <a class="Tierra active" title="Tierra" href="#Tierravelo">Tierra</a>
+      <a class="Marte" title="marte" href="#martevelo">Marte</a>
+      <a class="jupiter" title="jupiter" href="#jupitervelo">Jupiter</a>
+      <a class="saturno" title="saturno" href="#saturnovelo">Saturno</a>
+      <a class="urano" title="urano" href="#uranovelo">Urano</a>
+      <a class="neptuno" title="neptuno" href="#neptuvelo">Neptuno</a>
+    </div>
+    <div id="cotroles">
+      <label class="con-vista">
+        <input type="checkbox">
+      </label>
+      <label class="con-zoom">
+        <input type="checkbox">
+      </label>
+      <label>
+        <input type="radio" class="con-velo" name="escala" checked>
+        <span>Velocidad</span>
+      </label>
+      <label>
+        <input type="radio" class="con-tama" name="escala">
+        <span>Tamaño</span>
+      </label>
+      <label>
+        <input type="radio" class="con-distancia" name="escala">
+        <span>Distancia</span>
+      </label>
+    </div>
+    <div id="universo" class="escala-estirada">
+      <div id="galaxia">
+        <div id="sistema-solar" class="Tierra">
+          <div id="Mercurio" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Mercurio</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="venus" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Venus</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="Tierra" class="orbita">
+            <div class="pos">
+              <div class="orbita">
+                <div class="pos">
+                  <div class="luna"></div>
+                </div>
+              </div>
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Tierra</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="Marte" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Marte</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="jupiter" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Jupiter</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="saturno" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <div class="anillo"></div>
+                <dl class="info">
+                  <dt>Saturno</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="urano" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Urano</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="neptuno" class="orbita">
+            <div class="pos">
+              <div class="planeta">
+                <dl class="info">
+                  <dt>Neptuno</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div id="sol">
+            <dl class="info">
+              <dt>Sol</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+   
+   <script src="escr.js"></script>
+  </body>
+</html>

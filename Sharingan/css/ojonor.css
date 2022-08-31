@@ -1,0 +1,136 @@
+
+
+.Sh{
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    height: 200px;
+    border: solid;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 9px;
+    left: 70px;
+    animation: Sharin 4s linear 1s;
+    -webkit-animation: Sharin 4s linear 1s;
+}
+.Blan{
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 50px;
+    margin-left:60px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    animation: Colorne 4s linear infinite 1s;
+    -webkit-animation: Colorne 4s linear infinite 1s;
+}
+.Sharingan {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 12px;
+    left: 100px;
+    animation: Sharin 4s linear infinite 1s;
+    -webkit-animation: Sharin 4s linear infinite 1s;
+
+
+}
+.Circulo {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    opacity: 0%;
+    background-color: black;
+    border-radius: 50%;
+    top: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: Apa 4s linear infinite 1s;
+    -webkit-animation: Apa 4s linear infinite 1s;
+}
+.tri {
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    opacity: 0%;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+    border-radius: 0% 145% 0% 90%;
+    -moz-border-radius: 0% 145% 0% 90%;
+    -ms-border-radius: 0% 145% 0% 90%;
+    -o-border-radius: 0% 145% 0% 90%;
+    -webkit-transform: rotateZ(60deg) skewY(30deg);
+    -moz-transform: rotateZ(60deg) skewY(30deg);
+    -ms-transform: rotateZ(60deg) skewY(30deg);
+    -o-transform: rotateZ(60deg) skewY(30deg);
+    animation: Apa 4s linear infinite 1s;
+    -webkit-animation: Apa 4s linear infinite 1s;
+}
+
+.Interior {
+    width: 70%;
+    height: 70%;
+    outline-style: solid;
+    outline-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50px;
+    left: 50%;
+    transform: translate(21%, 21%);
+    -webkit-transform: translate(21%, 21%);
+    -moz-transform: translate(21%, 21%);
+    -ms-transform: translate(21%, 21%);
+    -o-transform: translate(21%, 21%);
+    animation: Apa 4s linear infinite 1s;
+    -webkit-animation: Apa 4s linear infinite 1s;
+   
+    
+}
+
+@keyframes Sharin {
+    to {
+        background-color: red;
+        
+    }
+
+}
+
+@keyframes Colorne {
+    to {
+        background-color: rgb(0, 0, 0);
+        
+    }
+
+}
+@keyframes Apa {
+    to {
+        opacity: 100%;
+        outline-color: black;
+        
+
+    }
+
+}
+
+
+
+
+

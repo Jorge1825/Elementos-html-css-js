@@ -1,0 +1,17 @@
+html{
+    background:linear-gradient(#2980b9 0%, white 100%);
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+.copo{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+}

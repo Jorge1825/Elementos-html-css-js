@@ -1,0 +1,301 @@
+*{
+    margin-top: -5px;
+    padding: 8px;
+    padding-bottom: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: rgb(146, 146, 146);
+    
+
+
+
+}
+header{
+    background-image: url("../img/hoyo-negro.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    margin-left: -31px;
+    margin-right: -40px;
+    margin-top:-80px;
+    margin-bottom: -14px;
+
+
+
+}
+
+.menu{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+
+}
+.menu  a:hover {
+    color: rgb(159, 162, 210);
+    cursor: pointer;
+    transform: translateY(5px);
+    text-shadow: .2px 0.1px rgb(85, 65, 65);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+.menu p:hover {
+    color: rgb(159, 162, 210);
+    transform: translateY(5px);
+    text-shadow: .2px 0.1px rgb(85, 65, 65);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+.menu .r:hover {
+    color: rgb(159, 162, 210);
+    transform: translateY(5px);
+    text-shadow: .2px 0.1px rgb(85, 65, 65);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+.logo{
+
+    font-size: 30px;
+    flex: 0.3 0 auto;
+    margin-top:30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.nav{
+    font-size: 18px;
+    display: flex;
+    flex: .6 0 auto;
+    padding: 0px;
+    margin: 0px;
+
+  
+}
+
+.msg{
+    color: rgb(255, 245, 245);
+    margin-top: 160px;
+    text-shadow: 1.2px 1px rgb(205, 7, 7);
+    text-align: center;
+
+    
+
+}
+.msg p{
+    margin-top: -23vh;
+}
+
+.redes a{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1.2px 1px rgb(15, 0, 0);
+ 
+    
+
+}
+
+
+
+/*Secion de imagenes */
+.section{
+    padding: 10px;
+    margin-top: -5px;
+    display: flex;
+    flex-wrap: wrap ;
+    background-color: rgb(235, 209, 230);
+    align-items: left;
+    justify-content: left;
+    text-align: justify;
+    
+
+}
+
+.one{
+    padding-bottom: 8px;
+    flex: 50%;
+    flex-flow: row nowrap;
+    height: 100%;
+
+}
+.one img{
+    width: 100%;
+    height: 100%;
+
+    
+
+}
+.one h5{
+    padding-bottom: 8px;
+    margin-top:-85px;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+    font-size: 17px;
+    margin-left:32px;
+
+}
+.one h1{
+   margin-top:-52px;
+   color: aliceblue;
+   text-shadow: 1px 1px black;
+    font-size:30px;
+    margin-left:10px;
+}
+.one p {
+    font-size: 20px;
+    color: rgb(105, 75, 75);
+    margin-right: 15px;
+}
+.one button{
+    border: none;
+    background-color: rgb(249, 151, 151);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight:bold;
+    margin-left: 30px;
+    padding:6PX;
+    
+}
+.one button:hover{
+    cursor: pointer;
+
+
+}
+hr{
+    background-color:rgb(255, 255, 255);
+    margin-top:0px;
+    margin-left:-22px;
+    border:none;
+    height:0px;
+    width:99.5vw;
+}
+
+
+footer{
+    background-color: rgb(235, 209, 230);
+    margin:-30px;
+    margin-top:-8px;
+    padding:7px;
+    width: 100vw;
+    height:33px;
+    text-align: center;
+
+}
+footer a{
+    background-color:rgb(237, 142, 216);
+    text-align: center;
+    padding:5px;
+    margin-top: 100px;
+}
+@media all and (max-width:900px){
+    .logo{
+        font-size: 26px;
+        flex: 0 0 auto;
+        margin-left: -10px;
+        }
+    .nav a{
+        font-size: 18px;
+        flex: 0 0 auto;
+        margin-left: -10px;
+    }
+    .redes a{
+        font-size: 23px;
+    }
+}
+
+
+
+@media all and (max-width:768px){
+    header{
+        margin-top:-10px;
+    }    
+
+    .section{
+  
+        flex-flow: column;
+    }
+    .one h1{
+        font-size:25px;
+        margin-top:-45px;
+    }
+    .one h5{
+        font-size:14px;
+        margin-top:-70px;
+    }
+
+    .menu{
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        display: block;
+
+    }
+    .logo{
+    margin-top: -50px;
+    margin-bottom: -50px;
+    flex: 0 0 auto;
+    font-size: 4.5vh;
+    margin-left: 0px;
+    }
+    .nav{
+        flex: 0 0 auto;
+        margin-top:0px;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .redes{
+        flex: 0 0 auto;
+        margin-left: 0px;
+    }
+    .menu a:hover {
+        color: rgb(159, 162, 210);
+        cursor: pointer;
+        transform: translateY(4px);
+        text-shadow: .2px 0.1px rgb(85, 65, 65);
+        -webkit-transform: translateY(4px);
+        -moz-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+}
+    .menu p:hover {
+        color: rgb(159, 162, 210);
+        transform: translateY(5px);
+        text-shadow: .2px 0.1px rgb(85, 65, 65);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+    .menu .r:hover {
+        color: rgb(159, 162, 210);
+        transform: translateY(5px);
+        text-shadow: .2px 0.1px rgb(85, 65, 65);
+        -webkit-transform: translateY(5px);
+        -moz-transform: translateY(5px);
+        -ms-transform: translateY(5px);
+        -o-transform: translateY(5px);
+}
+ hr{
+     width:97vw;
+ }
+}

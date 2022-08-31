@@ -1,0 +1,193 @@
+/* Primera manera 
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+
+
+
+*/
+
+/* Segunda manera 
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    display:flex;
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+    margin:auto;
+}
+
+*/
+
+/* Tercera manera 
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    display:grid;
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+    margin:auto;
+}
+
+
+*/
+/* Cuarta manera 
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    display:grid;
+    place-items: center;
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+
+}
+
+*/
+
+/* Quinta manera 
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    display:grid;
+    
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+    place-self: center;
+}
+*/
+
+/* Sexta manera
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    position: relative;
+    
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+
+
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    -webkit-transform: translate(-50%, -50%) ;
+    -moz-transform: translate(-50%, -50%) ;
+    -ms-transform: translate(-50%, -50%) ;
+    -o-transform: translate(-50%, -50%) ;
+}
+
+ */
+
+ /* Septima manera*/
+
+.container{
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+
+
+    position: relative;
+    
+
+
+
+}
+.centrar{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+
+
+
+
+
+
+    position: absolute;
+    inset: 0;
+    margin:auto;
+}
+

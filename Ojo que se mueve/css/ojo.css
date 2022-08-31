@@ -1,0 +1,41 @@
+html{
+    background-color: black;
+    
+}
+
+
+.Ojo {
+    position:fixed;
+    justify-content: space-between;
+    width:300px;
+    height:150px;
+    background-color:white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left:25%;
+    top:25%;
+    align-items: center;
+    justify-items: center;
+
+}
+.Ojo .punto{
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background-color:black;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

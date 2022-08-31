@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(15, 39, 3);
+    animation: animacolor 8s linear infinite;
+    -webkit-animation: animacolor 8s linear infinite;
+}
+
+section .container {
+
+    display: flex;
+}
+
+section .container .circulo {
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 -7.5px;
+}
+
+section .container .circulo span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+    -webkit-transform: rotate(calc(18deg * var(--i)));
+    -moz-transform: rotate(calc(18deg * var(--i)));
+    -ms-transform: rotate(calc(18deg * var(--i)));
+    -o-transform: rotate(calc(18deg * var(--i)));
+}
+
+section .container .circulo span::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 7.5px);
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background: rgb(5, 228, 5);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 10px rgb(5, 228, 5), 0 0 20px rgb(5, 228, 5), 0 0 40px rgb(5, 228, 5), 0 0 60px rgb(5, 228, 5), 0 0 80px rgb(5, 228, 5), 0 0 100px rgb(5, 228, 5);
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    animation: animar 4s linear infinite;
+    -webkit-animation: animar 4s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animar {
+
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    50%,
+    100% {
+        transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+        -o-transform: scale(0.1);
+    }
+
+}
+
+section .container .circulo:nth-child(2) {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+
+section .container .circulo:nth-child(2) span::before {
+
+    animation-delay: calc(-0.1s * var(--i));
+}
+
+
+@keyframes animacolor {
+
+    0% {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+    }
+}

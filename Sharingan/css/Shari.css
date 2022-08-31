@@ -1,0 +1,101 @@
+
+
+.Sh{
+    background-color: red;
+    width: 260px;
+    height: 200px;
+    border: solid;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 9px;
+    left: 70px;
+    
+
+}
+.Sharingan {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 5px;
+    left: 100px;
+    animation: Sharin 1s linear infinite 6s;
+    -webkit-animation: Sharin 1s linear infinite 6s;
+}
+
+.Interior {
+    width: 70%;
+    height: 70%;
+    outline-style: solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50px;
+    left: 50%;
+    transform: translate(21%, 21%);
+    -webkit-transform: translate(21%, 21%);
+    -moz-transform: translate(21%, 21%);
+    -ms-transform: translate(21%, 21%);
+    -o-transform: translate(21%, 21%);
+    
+}
+
+.Circulo {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    
+}
+
+.tri {
+    height: 18px;
+    width: 10px;
+    background-color: black;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+    border-radius: 0% 145% 0% 90%;
+    -moz-border-radius: 0% 145% 0% 90%;
+    -ms-border-radius: 0% 145% 0% 90%;
+    -o-border-radius: 0% 145% 0% 90%;
+    -webkit-transform: rotateZ(60deg) skewY(30deg);
+    -moz-transform: rotateZ(60deg) skewY(30deg);
+    -ms-transform: rotateZ(60deg) skewY(30deg);
+    -o-transform: rotateZ(60deg) skewY(30deg);
+    
+}
+
+
+@keyframes Sharin {
+    to {
+        
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        counter:1; 
+        
+    }
+
+}

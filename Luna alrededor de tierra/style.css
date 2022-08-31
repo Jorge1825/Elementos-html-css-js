@@ -1,0 +1,162 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./img/galaxy.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.cargar 
+{
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.cargar span 
+{
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+}
+.cargar span:nth-child(1)
+{
+  transform: rotate(-3deg);
+  background:url(img/img.png);
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  border-top: 0.25px solid rgba(255,255,255,0.5);
+  border-left: 0.25px solid rgba(255,255,255,0.5);
+  z-index: 1;
+  animation: sombra  50s linear infinite 1s ;
+  -webkit-animation: sombra  50s linear infinite 1s ;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  background-position: center center;
+}
+.cargar span:nth-child(2)
+{
+  background: url(img/58f9fde10ed2bdaf7c12832d.png);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  animation: animate 6s ease-in-out infinite;
+  -webkit-animation: animate 6s ease-in-out infinite;
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  background-position: center center;
+}
+.cargar span.luna:nth-child(3)
+{
+  background: #fff;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: -2s;
+  border-radius: 0;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+@keyframes animate 
+{
+  0% 
+  {
+    transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    z-index: 0;
+    -webkit-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -moz-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -ms-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -o-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+}
+  50% 
+  {
+    transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    z-index: 0;
+    -webkit-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -moz-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -ms-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -o-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+}
+  50.00001% 
+  {
+    transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    z-index: 3;
+    -webkit-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -moz-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -ms-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+    -o-transform: translate(170px,-60px) scale(0.4) rotate(360deg);
+}
+  100% 
+  {
+    transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    z-index: 3;
+    -webkit-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -moz-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -ms-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+    -o-transform: translate(-170px,-0px) scale(0.4) rotate(360deg);
+}
+}
+
+@keyframes girar {
+  0% {
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+  100% {
+    background-position-x: -800px;
+    background-position-y: 20px;
+  }
+  
+  
+}
+
+
+.cargar span.tierra {
+    animation-name: sombra,girar ;
+ 
+}
+
+@keyframes sombra{
+    0% {
+    
+      box-shadow:inset 16px 0 5px black;
+      
+      /* LEFT */
+    }
+  
+    25% {
+      box-shadow: inset 80px -30px 50px rgba(22, 22, 22, 0.5);
+      
+      /* BOTTOM */
+    }
+  
+    25.1% {
+      box-shadow: inset -94px -30px 40px rgb(22, 22, 22, 0.5);
+      /* BOTTOM */
+    }
+  
+    50% {
+      box-shadow: inset -16px -10px 5px black;
+      /* RIGHT */
+    }
+  
+    75% {
+      box-shadow: inset -2px 3px 2px black;
+      /* TOP */
+    }
+  
+    100% {
+      box-shadow: inset 16px 0px 5px black;
+      
+      /* LEFT */
+    }
+  }

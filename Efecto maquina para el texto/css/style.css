@@ -1,0 +1,22 @@
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    animation:Escribir 2s steps(12), recorrido .5s infinite step-end alternate ;
+    -webkit-animation:Escribir 2s steps(12), recorrido .5s infinite step-end alternate ;
+    overflow: hidden;
+}
+
+@keyframes Escribir { 
+    from { 
+        width:0px;
+    }
+}
+
+
+@keyframes recorrido { 
+    50% { border-color:transparent; }
+
+}
