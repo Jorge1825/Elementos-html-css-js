@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Validar pass</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-password">
+            <input type="password"  id="pass" placeholder="Pass" autocomplete="on" onkeyup="validarPassword(this.value)" >
+            <span id="verpassword"></span>
+
+        </div>
+        <div class="validar">
+            <ul>
+                <li id="minusculas">Tenga una letra mayuscula</li>
+                <li id="mayusculas">Tenga una letra mayusculas</li>
+                <li id="numero">Tenga un numero</li>
+                <li id="especial">Tenga un caracter especial</li>
+                <li id="longitud">Minimo de 8 caracteres</li>
+            </ul>
+        </div>
+
+    </div>
+    
+
+
+<script type="text/javascript" src="./js/script.js"></script>    
+</body>
+</html>

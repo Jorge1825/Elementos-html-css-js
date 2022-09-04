@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #97d2ff;
+
+}
+.container{
+    position: relative;
+    width: 300px;
+}
+
+.container .input-password{
+    position: relative;
+    width: 100%;
+    background: #ffff;
+    padding: 5px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container .input-password input{
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 5px;
+
+}
+
+.container .input-password #verpassword{
+    position: absolute;
+    top:8px;
+    right:10px;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.container .input-password #verpassword::before{
+    content: '\f06e';
+    font-family: fontAwesome;
+
+}
+.container .input-password #verpassword.hide::before{
+    content: '\f070';
+    font-family: fontAwesome;
+
+}
+
+.validar{
+    background: rgb(52, 124, 183);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+.validar ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:8px; /*espacio entre los elementos */
+
+}
+.validar ul li{
+    position: relative;
+    list-style: none;
+    color: #ffff;
+    font-size: 0.85rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+.validar ul li::before{
+    content: '\f192';
+    width: 20px;
+    display: inline-flex;
+    font-family: fontAwesome;
+}
+
+.validar ul li.valido{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.validar ul li.valido::before{
+    content: "\f00c";
+    font-family: fontAwesome;
+    color: #0f0;
+}
