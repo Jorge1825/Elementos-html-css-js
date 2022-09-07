@@ -35,6 +35,11 @@ body{
     -moz-transition: 1s;
     -ms-transition: 1s;
     -o-transition: 1s;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .targeta:hover{
     transform: translate(50%);
@@ -58,6 +63,11 @@ body{
     -ms-transition: 1s;
     -o-transition: 1s;
     box-shadow: 10px 20px 40px rgba(255, 255, 255, 0.8);
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
 }
 
 
@@ -79,6 +89,11 @@ body{
     object-fit: cover;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .targeta .imagen img:nth-child(2){
@@ -172,7 +187,12 @@ body{
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
-    }
+        border-radius: 20px ;
+        -webkit-border-radius: 20px ;
+        -moz-border-radius: 20px ;
+        -ms-border-radius: 20px ;
+        -o-border-radius: 20px ;
+}
     .targeta:hover{
         transform: none;
         -webkit-transform: none;
@@ -182,7 +202,8 @@ body{
     }
     .targeta .imagen{
         height: 50%;
-        background-image: url(https://moviewalker.jp/api/resizeimage/news/article/160429/930282?w=280);
+        background-image:;
+        url(https://moviewalker.jp/api/resizeimage/news/article/160429/930282?w=280);
         background-size: cover;
         content-visibility: hidden;
         transform: none;
@@ -190,7 +211,12 @@ body{
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
-    }
+        border-radius:20px ;
+        -webkit-border-radius:20px ;
+        -moz-border-radius:20px ;
+        -ms-border-radius:20px ;
+        -o-border-radius:20px ;
+}
     .targeta:hover .imagen{
         transform: none;
         -webkit-transform: none;
@@ -215,8 +241,10 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    
-    
-    
-    }
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+}
 }

@@ -1,0 +1,142 @@
+/*Importar fuente poppins*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(16, 1, 52);
+    
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(red,rgb(130, 13, 141));
+    clip-path: circle(30% at right 70%); /* clip path sirve para cortar el elemento y darle una forma */
+
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgb(40, 139, 233),rgb(180, 8, 51));
+    clip-path: circle(20% at 10% 10%); /* clip path sirve para cortar el elemento y darle una forma */
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+
+}
+.container .targeta{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdmNSf80gVmDIUwyC3DynoQV6nexMAjL5otnLAUknjwc8LfbvikWUBWcTTwm4uZ-uxXA&usqp=CAU) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px); /* blur sirve para difuminar el elemento */
+}
+
+.container .targeta .targeta-text{
+
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+}
+
+.container .targeta:hover .targeta-text{
+
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+.container .targeta .targeta-text h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color:rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+
+}
+
+.container .targeta .targeta-text h3{
+    font-size: 1.6em;
+    color: white;
+    z-index: 1;
+
+}
+.container .targeta .targeta-text p{
+    font-size: 1em;
+    color: white;
+    font-weight:300 ;
+}
+.container .targeta .targeta-text a{
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: white;
+    color: rgb(0, 0, 0);
+    border-radius: 20PX;
+    -webkit-border-radius: 20PX;
+    -moz-border-radius: 20PX;
+    -ms-border-radius: 20PX;
+    -o-border-radius: 20PX;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
