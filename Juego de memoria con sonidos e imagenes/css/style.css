@@ -44,7 +44,7 @@ h1{
     padding-bottom: 15px;
 }
 
-button{
+.btn{
     height: 100px;
     width: 100px;
     font-size: 40px;
@@ -56,7 +56,7 @@ button{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-button:hover{
+.btn:hover{
     cursor: pointer;
     background: rgba(211, 204, 204, 0.8);
 }
@@ -90,7 +90,7 @@ footer{
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 
@@ -101,5 +101,33 @@ footer{
 
 .ColorTargetaGana:disabled{
     background: rgba(0, 124, 8, 0.8);
+    color: white;
+}
+
+img{
+    width: 80%;
+}
+
+.btn-2{
+    display: none;
+}
+
+.reiniciar{
+    display: flex;
+    margin-top: 45px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+    background: rgba(170, 170, 170, 0.4);
+    font-weight: bold;
+
+}
+.reiniciar:hover{
+    cursor: pointer;
+    background: rgba(211, 204, 204, 0.8);
+}
+.reiniciar:active{
+    background: rgba(211, 204, 204, 0.8);
     color: white;
 }
