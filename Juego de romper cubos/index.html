@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <!-- Game canvas -->
+<canvas id="canvas"></canvas>
+
+<!-- Gameplay HUD -->
+<div class="ui">
+	<div class="iu_puntaje">
+		<div class="puntaje_lbl"></div>
+		<div class="contador-cubos"></div>
+	</div>
+	<div class="btn-pausa"><div></div></div>
+	<div class="camara">
+		<div class="camara-bar"></div>
+	</div>
+</div>
+
+<!-- Menu System -->
+<div class="menus">
+	<div class="menu menu--main">
+		<h1>ROMPE CUBOS</h1>
+		<button type="button" class="play-normal-btn">JUGAR</button>
+		<button type="button" class="play-casual-btn">MODO CASUAL</button>
+		<div class="creditos">Juego desarrollado por Jorge Luis</a></div>
+	</div>
+	<div class="menu menu--pausa">
+		<h1>Pausa</h1>
+		<button type="button" class="resume-btn">RENUDAR JUEGO</button>
+		<button type="button" class="menu-btn--pausa">MENU PRINCIPAL</button>
+	</div>
+	<div class="menu menu--puntaje">
+		<h1>Game Over</h1>
+		<h2>Su puntaje:</h2>
+		<div class="final-puntaje-lbl"></div>
+		<div class="mejor-puntaje-lbl"></div>
+		<button type="button" class="play-ahora-btn">PLAY AGAIN</button>
+		<button type="button" class="menu-btn--puntaje">MENU PRINCIPAL</button>
+	</div>
+</div>
+
+    
+
+
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
