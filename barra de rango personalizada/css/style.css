@@ -1,0 +1,83 @@
+/* Importar Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.rango{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1),#fff);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    box-shadow: 12px 18px 12px rgba(0,0,0,0.1),
+                -12px -18px 12px rgba(255,255,255,0.9);
+}
+
+.inputrange{
+    width: 400px;
+    height: 15px;
+    appearance: none;
+    background: #fff;
+    outline: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+                -5px -5px 10px rgba(255, 255, 255, 0.9),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.inputrange::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 166, 255);
+    box-shadow: -407px 0 0 400px rgb(0, 114, 207);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#ValorRango{
+    position: relative;
+    text-align: center;
+    width: 60px;
+    font-size: 1.25em;
+    color: #fff;
+    background: rgb(0, 114, 207);
+    margin-left: 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+                -5px -5px 5px rgba(255, 255, 255, 0.9),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.12);
+
+}
