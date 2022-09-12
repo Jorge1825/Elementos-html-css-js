@@ -1,0 +1,144 @@
+/* Importar Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background:#333;
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+footer .social, 
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social li,
+.menu li{
+    list-style: none;
+}
+footer .social li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+} 
+footer .social li a:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+    
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .ola{
+    position: absolute;
+    top:-98px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    background: url(../img/wave.png) repeat-x;
+    background-size: 1000px 100px;
+}
+footer .ola.ola1{
+    z-index: 2;
+    opacity: 1;
+    bottom: 0;
+    animation: animarola 4s linear infinite;
+    -webkit-animation: animarola 4s linear infinite;
+}
+footer .ola.ola2{
+    z-index: 1;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animarola_2 4s linear infinite;
+    -webkit-animation: animarola_2 4s linear infinite;
+}
+footer .ola.ola3{
+    z-index: 2;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animarola 3s linear infinite;
+    -webkit-animation: animarola 3s linear infinite;
+}
+footer .ola.ola4{
+    z-index: 1;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animarola_2 3s linear infinite;
+    -webkit-animation: animarola_2 3s linear infinite;
+}
+
+
+@keyframes animarola{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animarola_2{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
