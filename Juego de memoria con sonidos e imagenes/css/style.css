@@ -24,6 +24,7 @@ main{
     position: relative;
     width: 730px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-items: center;
@@ -37,6 +38,11 @@ main{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1{
@@ -69,6 +75,11 @@ h1{
     width: 250px;
     height: 400px;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
 
 }
@@ -130,4 +141,77 @@ img{
 .reiniciar:active{
     background: rgba(211, 204, 204, 0.8);
     color: white;
+}
+
+/* Media queries para movil */
+
+@media screen and (max-width: 768px){
+    main{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+
+    }
+    h1{
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    .sectionTargetas{
+        width: 95%;
+    }
+
+    .Estadisticas{
+        margin-top: 10px;
+        border-radius: 8px;
+        height: 100px;
+        width: 90%;
+        display: flex;
+        position: relative;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        flex-direction: row;
+
+}
+    .estadisticas{
+        /*Acomodar uno al lado del otro*/
+
+        width: 50%;
+
+        height: 80px;
+        margin-right: 0.2px;
+        font-size: 0.8em;
+        border-color: transparent;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        text-align: center;
+
+}
+    .btn{
+        height: 65px;
+        width: 65px;
+        font-size: 10px;
+    }
+    .btn-2{
+        margin-top: 10px;
+        display: block;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 15px;
+}
+    footer{
+        margin-top: 0;
+        font-size: 0.5em;
+    }
+
 }
