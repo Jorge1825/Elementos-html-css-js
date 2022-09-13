@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Luis Roa">
+    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link href="./icono.ico" rel="shortcut icon">
+    <title>Calculator</title>
+</head>
+
+<body class="body d-flex align-items-center justify-content-center">
+
+    <div class="container text-center justify-content-center align-items-center col-8 col-md-3 rounded-4">
+        <div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col bg-black input rounded-3">
+                    <input type="text" id="cajanum" style="text-align:right;background: rgba(220, 220, 220,0.98);"
+                        class="form-control my-3 py-3 fw-bold fs-2" placeholder="0"
+                        onkeypress="return validarCaracter(event.keyCode)">
+                </div>
+            </div>
+
+            <div class="row mt-2  my- justify-content-center align-items-center ">
+                <div class="col-3 my-1 "><button class="btn fw-bold btn-primary" type="button"
+                        onclick="limpiar()">C</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" onclick="operacion('/')"
+                        type="button">/</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" type="button" id="multi"
+                        onclick="operacion('*')">x</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" onclick="borrar()"
+                        type="button">&#60</button></div>
+            </div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-3 my-1 "><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(7)">7</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(8)">8</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(9)">9</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" onclick="operacion('-')"
+                        type="button">-</button></div>
+            </div>
+            <div class="row justify-content-center align-items-center ">
+                <div class="col-3 my-1 "><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(4)">4</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(5)">5</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" type="button"
+                        onclick="escribir(6)">6</button></div>
+                <div class="col-3 my-1"><button class="btn fw-bold btn-primary" onclick="operacion('+')"
+                        type="button">+</button></div>
+            </div>
+
+            <div class="row  justify-content-center ">
+
+
+                <div class="col ">
+
+
+                    <div class="row ">
+
+
+                        <div class="col-4 my-1 ">
+                            <button class="btn btn-primary fw-bold" type="button" onclick="escribir(1)">1</button>
+                        </div>
+                        <div class="col-4 my-1 ">
+                            <button class="btn btn-primary fw-bold" type="button" onclick="escribir(2)">2</button>
+                        </div>
+                        <div class="col-4 my-1 ">
+                            <button class="btn btn-primary fw-bold" type="button" onclick="escribir(3)">3</button>
+                        </div>
+
+
+                    </div>
+                    <div class="row mb-2  justify-content-center">
+
+
+                        <div class="col-8 my-1">
+                            <button class="btn btn-primary fw-bold" type="button" onclick="escribir(0)">0</button>
+                        </div>
+                        <div class="col-4 my-1 ">
+                            <button class="btn btn-primary fw-bold" type="button" onclick="escribir('.')">.</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-3 mb-3">
+
+                    <div class="col ajus mt-1"><button class="btn btn-primary fw-bold" onclick="igual()"
+                            type="button">=</button></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

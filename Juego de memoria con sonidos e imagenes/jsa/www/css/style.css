@@ -1,0 +1,217 @@
+
+*
+{
+
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background: rgb(131,58,180);
+background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    position: relative;
+    width: 730px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.sectionTargetas{
+    background: rgba(255,255,255,0.4);
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.btn{
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgba(211, 204, 204, 0.8);
+}
+
+
+.Estadisticas{
+    background-color: rgba(255,255,255,0.4);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 250px;
+    height: 400px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.estadisticas{
+    border: 1px solid white;
+    height: 120px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding:8px 20px ;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+
+.ColorTargetaPerdedora:disabled{
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+}
+
+.ColorTargetaGana:disabled{
+    background: rgba(0, 124, 8, 0.8);
+    color: white;
+}
+
+img{
+    width: 80%;
+}
+
+.btn-2{
+    display: none;
+}
+
+.reiniciar{
+    display: flex;
+    margin-top: 45px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 20px;
+    background: rgba(170, 170, 170, 0.4);
+    font-weight: bold;
+
+}
+.reiniciar:hover{
+    cursor: pointer;
+    background: rgba(211, 204, 204, 0.8);
+}
+.reiniciar:active{
+    background: rgba(211, 204, 204, 0.8);
+    color: white;
+}
+
+/* Media queries para movil */
+
+@media screen and (max-width: 768px){
+    main{
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+
+    }
+    h1{
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+
+    .sectionTargetas{
+        width: 95%;
+    }
+
+    .Estadisticas{
+        margin-top: 10px;
+        border-radius: 8px;
+        height: 100px;
+        width: 90%;
+        display: flex;
+        position: relative;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        flex-direction: row;
+
+}
+    .estadisticas{
+        /*Acomodar uno al lado del otro*/
+
+        width: 50%;
+
+        height: 80px;
+        margin-right: 0.2px;
+        font-size: 0.8em;
+        border-color: transparent;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 10px;
+        text-align: center;
+
+}
+    .btn{
+        height: 65px;
+        width: 65px;
+        font-size: 10px;
+    }
+    .btn-2{
+        margin-top: 10px;
+        display: block;
+        background-color: rgba(255,255,255,0.7);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        font-size: 15px;
+}
+    footer{
+        margin-top: 0;
+        font-size: 0.5em;
+    }
+
+}
