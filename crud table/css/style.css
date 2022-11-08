@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(11, 41, 173) 0%, rgba(0,125,255,1) 50%, rgb(28, 123, 187) 100%);
+}
+
+
+.cita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(15, 168, 15);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-color: rgb(4, 148, 4);
+    font-size: 15px;
+
+    padding: 5PX;
+}
+
+.cita:hover{
+    background-color: rgb(4, 148, 4);
+    border-color: rgb(15, 168, 15);
+}
+
+
+.x::before{
+    content: '\f057';
+    font-family: fontAwesome;
+    color: white;
+
+}
+
+
+.lapiz::before{
+    content: '\f044';
+    font-family: fontAwesome;
+    color: white;
+}

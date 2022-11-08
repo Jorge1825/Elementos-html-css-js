@@ -5,6 +5,11 @@ let signoFuncionando = "";
 
 let label = document.getElementById("label");
 let caja = document.getElementById("cajanum");
+const punto = document.getElementById("punto");
+
+
+
+
 
 function borrar() {
   caja.value = caja.value.slice(0, -1);
@@ -20,6 +25,9 @@ function limpiar() {
 }
 
 function escribir(valor) {
+  if(caja.value.length == 0 && valor == "."){
+    caja.value = "0.";
+  }
   if (caja.value.includes(".") && valor == ".") {
   } else {
     if (
@@ -88,9 +96,15 @@ function igual() {
 }
 
 function validarCaracter(tecla) {
+  
   if ((tecla >= 48 && tecla <= 57) || tecla == 46) {
-    escribir(String.fromCharCode(tecla));
-    return false;
+      if(tecla == 46 && caja.value.length == 0){
+        caja.value = "0.";
+            return false;
+      }
+
+      escribir(String.fromCharCode(tecla));
+      return false;
   } else if (tecla == 43 || tecla == 45 || tecla == 42 || tecla == 47) {
     operacion(String.fromCharCode(tecla));
     return false;

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Practica 1</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-10 text-center justify-content-center text-light fs-1 fw-bold my-5">
+                ADMINISTRADOR DE PACIENTES DE VETERINARIA
+            </div>
+            <div class="row justify-content-center ">
+
+                <div class="col-10 bg-light ">
+                    
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 text-center">
+                        <div class="alert bg-danger d-none text-light" role="alert" id="alert">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-5 bg-light pb-4">
+                    
+                    <div class="row justify-content-center ">
+                        <div class="col-11 fs-4">Datos del Paciente</div>
+                    </div>
+
+
+                    <div class="row justify-content-center align-items-center mt-5">
+                        <div class="col-4  fs-6 fw-bold">Nombre Mascota: </div>
+                        <div class="col-7 fs-4"> <input id="inputNamePet" type="text" class="form-control" placeholder="Nombre de la mascota" ></div>
+                    </div>
+                    <div class="row justify-content-center align-items-center mt-3">
+                        <div class="col-4  fs-6 fw-bold">Propietario: </div>
+                        <div class="col-7 fs-4"> <input id="inputNameOwner" type="text" class="form-control" placeholder="Nombre del Propietario" ></div>
+                    </div>
+                    <div class="row justify-content-center align-items-center mt-3">
+                        <div class="col-4  fs-6 fw-bold">Teléfono: </div>
+                        <div class="col-7 fs-4"> <input id="inputPhone" type="tel" class="form-control" placeholder="Nombre de la mascota" ></div>
+                    </div>
+                    <div class="row justify-content-center align-items-center mt-3">
+                        <div class="col-4  fs-6 fw-bold">Fecha: </div>
+                        <div class="col-7 fs-4"> <input id="inputDate" type="date" class="form-control" placeholder="Nombre de la mascota" ></div>
+                    </div>
+
+                    <div class="row justify-content-center align-items-center mt-3">
+                        <div class="col-4  fs-6 fw-bold">Hora: </div>
+                        <div class="col-7 fs-4"> <input id="inputHour" type="time" class="form-control" placeholder="Nombre de la mascota" ></div>
+                    </div>
+                    <div class="row justify-content-center  mt-3">
+                        <div class="col-4  fs-6 fw-bold">Sintomas: </div>
+                        <div class="col-7 fs-4"> <textarea class="form-control" p id="sintomas" style="height: 250px"></textarea></div>
+                    </div>
+                    <div class="row justify-content-center  mt-3 mb-5">
+         
+                        <div class="col-11 fs-4"><a href="#alert" style="text-decoration: none;color:white;"> <button class="cita col-12" onclick="send()" type="button"> CREAR CITA </button></a></div>
+                    </div>
+
+                </div>
+                <div class="col-5 bg-light pb-4 justify-content-center">
+                    <div class="row justify-content-center ">
+                        <div class="col-11 fs-4">Administra tus Citas</div>
+                    </div>
+                    <div id="setCardPet" class="overflow-auto " style="height: 92vh;">
+                        
+                        
+                    </div>
+                      
+    
+                </div>
+        </div>
+    
+        </div>
+    </div>
+
+
+        <script src="./js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
