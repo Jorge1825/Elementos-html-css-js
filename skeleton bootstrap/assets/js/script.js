@@ -1,7 +1,6 @@
 async function requestInfo(){
     //obtener la info del archivo computers.json
-    const data = await fetch("./assets/js/computers.json");
-
+    const data = await fetch("./assets/json/computers.json");
     const json = await data.json()
 
     let html = "";
@@ -19,7 +18,7 @@ async function requestInfo(){
 
         //crear targetas para cada post
 
-    html = `<div class="contenedor-targeta">
+    html += `<div class="contenedor-targeta">
     <div class="cabecera-targeta">
 
             <img src="${postUrl}" class="fadeIn">
@@ -44,7 +43,7 @@ async function requestInfo(){
     document.querySelector('#contenedor').innerHTML = html;
 
 
-
+ 
 
 }
 
