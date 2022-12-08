@@ -1,0 +1,36 @@
+{ 
+    "computers": [
+    {
+        "id":1,
+        "name": "ROG Zephyrus Duo 16 (2022) GX650RX-LB011X", 
+        "image":"pc1.png",
+        "caracteristicas": [
+            "NVIDIA® GeForce RTX™ 3080 Ti Laptop GPU",
+            "Windows 11 Pro",
+            "AMD Ryzen™ 9 6900HX",
+            "ROG Nebula Display",
+            "16 pulgadas, UHD+ 16:10 (3840 x 2400, WQUXGA) / FHD+ 16:10 (1920 x 1200, WUXGA),",
+            "Additional Display: 14 pulgadas 3840 x 1100(4K) IPS-level Panel",
+            "2TB + 2TB PCIe® 4.0 NVMe™ M.2 Performance SSD (RAID 0)"
+        ],
+        "cost": 5000000,
+        "stock":2
+    },
+    {
+        "id":2,
+        "name": "ROG Strix G15 (2022) G513RM-HQ310W",
+        "image":"pc2.png",
+        "caracteristicas":[
+            "NVIDIA® GeForce RTX™ 3060 Laptop GPU",
+            "Windows 11 Home",
+            "AMD Ryzen™ 7 5800H",
+            "15.6 pulgadas, FHD (1920 x 1080) 16:9, Refresh Rate:144Hz",
+            "1TB PCIe® 4.0 NVMe™ M.2 SSD",
+            "16GB DDR4 3200MHz"
+        ],
+        "cost": 3500000,
+        "stock":10
+
+    }
+    ]
+}
