@@ -11,7 +11,7 @@ async function requestInfo(){
 
     for(let i = 0; i < json.computers.length; i++){
         const post = json.computers[i]
-        const postUrl = await descargarImage(post.image)
+        const postUrl = descargarImage(post.image,post.id)
 
         
 
@@ -21,7 +21,6 @@ async function requestInfo(){
     html += `<div class="contenedor-targeta">
     <div class="cabecera-targeta">
 
-            <img src="${postUrl}" class="fadeIn">
             <h3 class="fadeIn">${post.name}</h3>
     </div>
     <div class="cuerpo-targeta">
@@ -29,8 +28,8 @@ async function requestInfo(){
             <p class="fadeIn">${post.name}</p>
         </div>
 
-        <div class="image-targeta">
-            <img src="${postUrl}" class="fadeIn">
+        <div class="image-targeta" id="imgtargeta${post.id}">
+            <img src="./assets/img/1px.png"  class="holder">
         </div>
 </div>
 </div>`
@@ -49,7 +48,7 @@ async function requestInfo(){
 
 
 
-async function descargarImage(url){
+async function descargarImage(url,id){
     console.log(`descargando ${url} ...`)
 
     const response = await fetch(`http://localhost:5500/assets/img/${url}`);
@@ -59,7 +58,8 @@ async function descargarImage(url){
     const imgUrl = URL.createObjectURL(blob)
     console.log(`descarga completa de ${url} ...`)
 
-    return imgUrl;
+    document.querySelector(`#imgtargeta${id}`).innerHTML = `<img src="${imgUrl}" class="fadeIn">`;
+
 }
 
 

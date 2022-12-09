@@ -31,6 +31,70 @@
         "cost": 3500000,
         "stock":10
 
+    },
+    {
+        "id":3,
+        "name": "ROG Strix G15 (2022) G513RM-HQ310W",
+        "image":"pc3.png",
+        "caracteristicas":[
+            "NVIDIA® GeForce RTX™ 3060 Laptop GPU",
+            "Windows 11 Home",
+            "AMD Ryzen™ 7 5800H",
+            "15.6 pulgadas, FHD (1920 x 1080) 16:9, Refresh Rate:144Hz",
+            "1TB PCIe® 4.0 NVMe™ M.2 SSD",
+            "16GB DDR4 3200MHz"
+        ],
+        "cost": 3500000,
+        "stock":10
+
+    },
+    {
+        "id":4,
+        "name": "ROG Strix G15 (2022) G513RM-HQ310W",
+        "image":"pc4.png",
+        "caracteristicas":[
+            "NVIDIA® GeForce RTX™ 3060 Laptop GPU",
+            "Windows 11 Home",
+            "AMD Ryzen™ 7 5800H",
+            "15.6 pulgadas, FHD (1920 x 1080) 16:9, Refresh Rate:144Hz",
+            "1TB PCIe® 4.0 NVMe™ M.2 SSD",
+            "16GB DDR4 3200MHz"
+        ],
+        "cost": 3500000,
+        "stock":10
+
+    },
+    {
+        "id":5,
+        "name": "ROG Strix G15 (2022) G513RM-HQ310W",
+        "image":"pc5.png",
+        "caracteristicas":[
+            "NVIDIA® GeForce RTX™ 3060 Laptop GPU",
+            "Windows 11 Home",
+            "AMD Ryzen™ 7 5800H",
+            "15.6 pulgadas, FHD (1920 x 1080) 16:9, Refresh Rate:144Hz",
+            "1TB PCIe® 4.0 NVMe™ M.2 SSD",
+            "16GB DDR4 3200MHz"
+        ],
+        "cost": 3500000,
+        "stock":10
+
+    },
+    {
+        "id":6,
+        "name": "ROG Strix G15 (2022) G513RM-HQ310W",
+        "image":"pc6.png",
+        "caracteristicas":[
+            "NVIDIA® GeForce RTX™ 3060 Laptop GPU",
+            "Windows 11 Home",
+            "AMD Ryzen™ 7 5800H",
+            "15.6 pulgadas, FHD (1920 x 1080) 16:9, Refresh Rate:144Hz",
+            "1TB PCIe® 4.0 NVMe™ M.2 SSD",
+            "16GB DDR4 3200MHz"
+        ],
+        "cost": 3500000,
+        "stock":10
+
     }
     ]
 }
